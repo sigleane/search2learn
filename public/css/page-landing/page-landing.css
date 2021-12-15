@@ -5,11 +5,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    --box-shadow-camadas: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 body {
     overflow-wrap: anywhere;
 }
+
+::-webkit-scrollbar{
+ 
+    width: 9px;
+    background-color: rgb(202, 198, 198);
+    }
+    ::-webkit-scrollbar-thumb{
+        height:10px;
+        background-color: rgb(148, 146, 146);
+    }
 
 div#page-landing-presentation {
     display: flex;
@@ -40,10 +51,6 @@ div#presentation .container h1 {
     margin-bottom: 30px;
 }
 
-footer {
-    margin-top: 80px;
-    background: #3f3d56;
-}
 
 @media (max-width: 600px) {
 

@@ -1,0 +1,92 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    margin-top: 80px;
+    height: 350px;
+
+    background: url("/public/images/page-landing/ondas.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .container {
+    margin-top: 20vh;
+}
+
+.grid {
+    width: 100%;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.grid-blok {
+    width: 50%;
+    min-height: 11.25rem;
+    padding: 1rem;
+}
+
+.tile-link:hover .tile-img-link {
+    display: block;
+}
+
+.tile-link:hover .tile-img-link:hover .tile-img {
+    opacity: 0.5;
+}
+
+.tile-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.125s;
+    transition-timing-function: ease-in;
+
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tile-link:hover .tile-img {
+    box-shadow: var(--box-shadow-camadas) ; 
+}
+
+.image-grid {
+    perspective: 1000px;
+}
+
+.image-grid .tile-link:hover .tile-img {
+    top: -1rem;
+    left: -1rem;
+}
+
+.image-grid .tile-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-property: opacity, top, left, box-shadow;
+}
+
+.tile-link {
+    display: block;
+}
+
+.tile-link:hover .tile-img {
+    opacity: 1;
+}
+
+div#disclaimer {
+    color: coral;
+    user-select: none;
+}
