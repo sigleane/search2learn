@@ -11,6 +11,7 @@
 
 body {
     overflow-wrap: anywhere;
+    overflow-x: hidden;
     min-height: 100vh;
 }
 
@@ -46,8 +47,31 @@ header div#assuntos nav {
 header div#assuntos a {
     cursor: pointer;
     font-weight: bold;
+
+    transition: 0.3s;
 }
 
 header div#assuntos a:hover {
     color: coral;
+}
+
+div#onda-lateral {
+    position: fixed;
+
+    /* top: 60%;
+    left: 70%;
+    transform: rotate(299deg); */
+
+    /* OU  */
+
+    top: 65vh;
+    left: 73vw;
+    transform: rotate(296deg);
+   
+
+    width: 1000px;
+    height: 700px;
+    background: url("/public/images/acess-content/onda-lateral.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
