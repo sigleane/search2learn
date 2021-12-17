@@ -55,6 +55,28 @@ header div#assuntos a:hover {
     color: coral;
 }
 
+main {
+    transition: 0.3s;
+}
+
+#topic-trending {
+    display: flex;
+    align-items: center;
+    
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
 div#onda-lateral {
     position: fixed;
 

@@ -7,6 +7,15 @@
     
     <link rel="stylesheet" href="/public/css/acess-content/acess-content.css">
     <link rel="stylesheet" href="/public/css/acess-content/carrossel-videos.css">
+    <link rel="stylesheet" href="/public/css/acess-content/loader.css">
+
+    <link rel="stylesheet" href="/public/css/acess-content/slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <title>Materiais - Share2Learn</title>
 </head>
@@ -24,21 +33,97 @@
         </div>
     </header>
 
-    <div id="videos">
-        <div id="video-1" class="carrossel-video">
-            <iframe width="950" height="534" src="https://www.youtube.com/embed/92RkvBuIcts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <p>Criando Google login com HTML e JS - #Root 29</p>
-        </div>
-
-        <div id="video-1" class="carrossel-video">
-            <iframe width="950" height="534" src="https://www.youtube.com/embed/LA2L4OsYrY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <p>Como melhorar minha lógica de programação? | #Root 28</p>
-        </div>
-       
+    <div class="loader show">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
+    <main class="hidden">
+        <section class="thumbSection">
+          <h2 class="thumbTitle">Populares recentemente</h2>
+          <div class="thumbTiles swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a class="thumbTile" >
+                    <iframe width="950" height="534" src="https://www.youtube.com/embed/fYR9L2ZmodM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </a>
+              </div>
+  
+              <div class="swiper-slide">
+                  <a class="thumbTile" >
+
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/LA2L4OsYrY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                  </a>
+              </div>
+              <div class="swiper-slide">
+                  <a class="thumbTile" >
+                    <iframe width="950" height="534" src="https://www.youtube.com/embed/9AO2hZJsHrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </a>
+              </div>
+              <div class="swiper-slide">
+                  <a class="thumbTile" >
+                    <iframe width="950" height="534" src="https://www.youtube.com/embed/c2dyvWhu_Y0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </a>
+              </div>
+              <div class="swiper-slide">
+                  <a class="thumbTile">
+                    <iframe width="950" height="534" src="https://www.youtube.com/embed/7WcOlNLcZ0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </a>
+              </div>
+             
+            </div>
+  
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+
+        
+         
+          <section id="trending">
+            <div id="topic-trending">
+              <img src="/public/images/acess-content/trending-fire.png" alt="">
+              <span>Trending</span>
+            </div>
+          </section>
+ 
+      </main>
+
     <div id="onda-lateral"></div>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  spaceBetween: 5,
+  slidesPerView: 2,
+  loop: true,
+  freeMode: true,
+  loopAdditionalSlides: 5,
+  speed: 500,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    //   quando a largura da janela é >= 640px
+      640: {
+        slidesPerView: 3,
+        slidesPerGroups: 5,
+        freeMode: false
+      }
+  }
+});
+    </script>
+
+    <script src="/public/scripts/acess-content.js"></script>
 </body>
 </html>
