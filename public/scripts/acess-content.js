@@ -1,10 +1,10 @@
 document.body.onload = () => {
     const loader = document.body.querySelector(".loader");
-    const main = document.body.querySelector("main");
+    const thumbSection = document.body.querySelector(".thumbSection");
     
     loader.classList.remove("show");
     loader.classList.add("hidden");
 
-    main.classList.remove("hidden");
-    main.classList.add("show");
+    thumbSection.classList.remove("hidden");
+    thumbSection.classList.add("show");
 }

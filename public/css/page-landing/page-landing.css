@@ -17,10 +17,10 @@ body {
     width: 9px;
     background-color: rgb(202, 198, 198);
     }
-    ::-webkit-scrollbar-thumb{
-        height:10px;
-        background-color: rgb(148, 146, 146);
-    }
+::-webkit-scrollbar-thumb{
+    height:10px;
+    background-color: rgb(148, 146, 146);
+}
 
 div#page-landing-presentation {
     display: flex;
