@@ -1,212 +1,203 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-    overflow-wrap: anywhere;
-    overflow-x: hidden;
-    min-height: 100vh;
+  overflow-wrap: anywhere;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-::-webkit-scrollbar{
- 
-    width: 9px;
-    background-color: rgb(202, 198, 198);
-    }
-::-webkit-scrollbar-thumb{
-    height:10px;
-    background-color: rgb(148, 146, 146);
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: rgb(202, 198, 198);
+}
+::-webkit-scrollbar-thumb {
+  height: 10px;
+  background-color: rgb(148, 146, 146);
 }
 
 header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    justify-content: space-between;
-    padding: 30px;
-    border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-
 header div.container {
-    width: 300px;
+  width: 300px;
 }
 
 header div.container h1 {
-    background: linear-gradient(90deg, rgb(202, 67, 4) 0%, 36.4865%, rgb(255, 169, 129) 72.973%, 86.4865%, rgb(255, 255, 240) 100%);
-    cursor: default;
+  background: linear-gradient(
+    90deg,
+    rgb(202, 67, 4) 0%,
+    36.4865%,
+    rgb(255, 169, 129) 72.973%,
+    86.4865%,
+    rgb(255, 255, 240) 100%
+  );
+  cursor: default;
 
-    color: white;
-    text-align:left;
-    font-family: 'Inter', sans-serif;
+  color: white;
+  text-align: left;
+  font-family: "Inter", sans-serif;
 }
 
 header div#assuntos nav {
-    display: flex;
-    flex-direction: row;
-    overflow-wrap: break-word;
-    user-select: none;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  overflow-wrap: break-word;
+  user-select: none;
+  gap: 30px;
 }
 
 header div#assuntos a {
-    cursor: pointer;
-    font-weight: bold;
+  cursor: pointer;
+  font-weight: bold;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 header div#assuntos a:hover {
-    color: coral;
+  color: coral;
 }
 
 header div#assuntos a.active {
-    color: coral;
-} 
+  color: coral;
+}
 
 main {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 #topic-trending {
-    display: flex;
-    align-items: center;
-    
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 14px;
-    margin: 7% 4% 12px;
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 14px;
+  margin: 7% 4% 12px;
 }
 
 div#books {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    margin: 5% 4% 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 5% 4% 12px;
 }
 
 a.book {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s;
 
-    width: 35vw;
-    gap: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    
-    text-decoration: none;
-    color: inherit;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    cursor: pointer;
+  width: 35vw;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+
+  text-decoration: none;
+  color: inherit;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
 }
 
 a.book:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
-/* a.book .image-container {
-    width: 200px;
-} */
 
 a.book .book-presentation {
-    display: flex;
-    gap: 20px;
-    width: 100%;
+  display: flex;
+  gap: 20px;
+  width: 100%;
 }
 
 a.book span {
-    font-size: 14pt;
-    font-weight: bold;
+  font-size: 14pt;
+  font-weight: bold;
 }
 
-a.book .image-container img{
-    width: 10vw;
-    height: fit-content;
+a.book .image-container img {
+  width: 10vw;
+  height: fit-content;
 }
-
 
 div.book .book-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 10px;
-    padding-right: 10px;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  padding-right: 10px;
 }
 
- .info {
-    width: fit-content;
+.info {
+  width: fit-content;
 }
 
 .hidden {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .show {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 div#onda-lateral {
-    position: fixed;
+  position: fixed;
 
-    /* top: 60%;
-    left: 70%;
-    transform: rotate(299deg); */
+  top: 65vh;
+  left: 73vw;
+  transform: rotate(296deg);
 
-    /* OU  */
-
-    top: 65vh;
-    left: 73vw;
-    transform: rotate(296deg);
-   
-
-    width: 1000px;
-    height: 700px;
-    background: url("/public/images/acess-content/onda-lateral.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  width: 1000px;
+  height: 700px;
+  background: url("/public/images/acess-content/onda-lateral.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-
 @media screen and (max-width: 640px) {
-    header {
-      flex-direction: column;
-      gap: 25px;
-      font-size: 11pt;
-    }
+  header {
+    flex-direction: column;
+    gap: 25px;
+    font-size: 11pt;
+  }
 
-    header div.container h1 {
-        text-align: center;
-      }
+  header div.container h1 {
+    text-align: center;
+  }
 
-      div#books {
-        align-items: center;
-        flex-direction: column;
-    }
+  div#books {
+    align-items: center;
+    flex-direction: column;
+  }
 
-    a.book .book-info {
-        width: 400px;
-    }
+  a.book .book-info {
+    width: 400px;
+  }
 
-    a.book .image-container img{
-        width: 20vw;
-    }
+  a.book .image-container img {
+    width: 20vw;
+  }
 
-    a.book {
-        width: 80vw;
-    }
-    
+  a.book {
+    width: 80vw;
+  }
 }
